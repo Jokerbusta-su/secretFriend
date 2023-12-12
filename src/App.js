@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import crypto from "crypto-js";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MostrarResultado from './mostrarResultado';
+
 
 
 import './App.css';
