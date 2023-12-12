@@ -68,9 +68,7 @@ function App() {
 
     for (let xx = 0; xx < resultado.length; xx++) {
       const element = resultado[xx];
-      console.log(element);
       let carlos = crypto.AES.encrypt(JSON.stringify(element), 'my-secret-key@123').toString();
-      console.log(carlos)
       const encryptedParam = encodeURIComponent(carlos);
       const url = `${window.location.origin}/mostrarResultado?data=${encryptedParam}`;
       console.log(`URL para participante ${element.nombre} : ${url}`);

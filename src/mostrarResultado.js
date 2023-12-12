@@ -34,7 +34,7 @@ const MostrarResultado = () => {
                     {mostrarDetalles && (
                         <>
                             <p>Amigo Secreto: {data.amigoSecreto}</p>
-                            <img src={data.urlImagen} alt="Imagen del participante" />
+                           
                         </>
                     )}
                     <button onClick={() => setMostrarDetalles(!mostrarDetalles)}>
